@@ -13,7 +13,6 @@
  * https://github.com/poole/hyde.
  */
 
-
 /*
  * Contents
  *
@@ -24,7 +23,6 @@
  * Themes
  */
 
-
 /*
  * Global resets
  *
@@ -32,7 +30,7 @@
  */
 
 html {
-  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji;
 }
 @media (min-width: 48em) {
   html {
@@ -56,7 +54,7 @@ html {
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
-  color: rgba(255,255,255,.5);
+  color: rgba(255, 255, 255, 0.5);
   background-color: #202020;
 }
 @media (min-width: 48em) {
@@ -79,7 +77,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  font-family: "Abril Fatface", serif;
+  /* font-family: 'Abril Fatface', serif; */
   font-size: 3.25rem;
 }
 
@@ -108,12 +106,11 @@ a.sidebar-nav-item:focus {
 @media (min-width: 48em) {
   .sidebar-sticky {
     position: absolute;
-    right:  1rem;
+    right: 1rem;
     bottom: 1rem;
-    left:   1rem;
+    left: 1rem;
   }
 }
-
 
 /* Container
  *
@@ -122,7 +119,7 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top: 4rem;
   padding-bottom: 4rem;
 }
 
@@ -140,7 +137,6 @@ a.sidebar-nav-item:focus {
     margin-right: 4rem;
   }
 }
-
 
 /*
  * Reverse layout
@@ -165,8 +161,6 @@ a.sidebar-nav-item:focus {
     margin-right: 22rem;
   }
 }
-
-
 
 /*
  * Themes
@@ -248,3 +242,56 @@ a.sidebar-nav-item:focus {
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
 }
+
+/* Commented code */
+.commented-code {
+  margin-left: 0;
+  margin-right: 0;
+  position: relative;
+  padding: 2rem 0 0 0;
+  display: flex;
+  flex-direction: column;
+  border-radius: .3rem;
+  box-shadow: 0 0 0 1px #e0e0e0;
+}
+
+.commented-code .highlight {
+  margin-bottom: .8rem;
+}
+
+.commented-code__code {}
+
+.commented-code__caption-meta {
+  font-family: monospace;
+  position: absolute;
+  bottom: calc(100% - 1.6rem);
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem
+}
+
+.commented-code__caption {
+  font-style: normal;
+  padding: 0 .8rem .8rem .8rem;
+}
+
+.commented-code__caption-content {
+  font-size: .9rem;
+}
+
+.commented-code__lang {
+  font-size: .8rem;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #f1ebf5;
+  display: inline-block;
+  padding: 0 .5rem 0 .5rem;
+  border-radius: 10000rem;
+}
+
+.commented-code__filename {
+  font-size: .8rem;
+  font-style: normal;
+  color: #2a1e33
+}
+
